@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body {
+    display:flex;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(180, 182, 65);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.barralateral {
+    width: 200px;
+    background: black;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.boton {
+    background-color: #1e90ff;
+    color: azure;
+    padding:10px;
+    border:2px solid transparent;
+    cursor:pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+.boton:hover {
+    border-color: rgb(224, 224, 224);
+    box-shadow: 0px 0px 10px rgb(208, 210, 220);
+}
+
+.boton.active {
+    background-color: rgb(27, 67, 27);
+    border-color: antiquewhite;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    margin: auto 0;
+}
+
+
+.info {
+        width: 800px;
+        padding: 5px;
+        background-color: rgba(128, 157, 128, 0.454);
+        color: black;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 8px 4px 20px rgba(157,34,4, 0.929);
+        margin:20px 150px;
+}
+
+
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+.card {
+    background-color: background: background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align:center;
+    padding-top: 20px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-content { 
+    padding: 10px;
+}
+
+.card-title {
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: black; 
+    font-size: medium;
+}
+    </style>
+</head>
+<body  vlink="white" link="white"  alink="yellow">
+    <div class="barralateral">
+        <button class="boton" onclick="activateButton(this)"> <a href="index.html"> index</a> </button>
+    </div>
+    <div>
+        <div class="info">
+            <h1><u> COMIDA TIPICA</u></h1>
+            <img class="img" src="images/comid.jpg"> <br>
+    Tacos –  Tortilla de maíz o harina rellena de carne (asada, al pastor, barbacoa, carnitas, etc.), con cebolla, cilantro y salsas.<br>
+
+Tamales – Masa de maíz rellena de carne, chiles o dulces, envuelta en hoja de maíz o plátano y cocida al vapor.<br>
+
+Mole – Salsa espesa con chiles, chocolate y especias, servida con carne de pollo o cerdo.<br>
+
+Pozole –  Caldo de maíz cacahuazintle con carne de cerdo o pollo, acompañado de lechuga, rábanos y orégano.<br>
+
+Chiles en nogada –  Chile poblano relleno de picadillo (carne, frutas y especias), bañado con salsa de nuez y decorado con granada.<br>
+
+Cochinita pibil –  Carne de cerdo marinada con achiote y naranja agria, cocida lentamente y servida con cebolla morada encurtida. <br>
+
+Enchiladas – Tortillas rellenas de pollo, queso o carne, bañadas en salsa roja, verd e o de mole.<br>
+
+<h2>Bebidas Tradicionales</h2><br>
+Tequila y mezcal – Destilados de agave, típicos de Jalisco y Oaxaca.<br>
+
+Atole y champurrado – Bebidas calientes a base de maíz, con leche, vainilla o chocolate.<br>
+
+Aguas frescas – De jamaica, horchata, tamarindo, entre otras.<br>
+
+<h2>Dulces y Postres</h2>
+Pan de muerto – Pan dulce con azúcar o ajonjolí, típico del Día de Muertos.<br>
+
+Capirotada – Pan tostado con miel, queso, pasas y nueces, tradicional en Cuaresma.<br>
+
+Alegrías – Dulces de amaranto con miel y  semillas<br>
+<img class="img" src="images/grafic.comid.jpg"> <br>
+        </div>
+    <script> 
+        function activateButton(button) {
+            button.classList.toggle('activate');
+        }
+    </script>
+</body>
+</html>
